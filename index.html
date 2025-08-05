@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Management System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">🏥 City Hospital</div>
+    <nav>
+      <a href="#dashboard">Dashboard</a>
+      <a href="#patients">Patients</a>
+      <a href="#doctors">Doctors</a>
+      <a href="#appointments">Appointments</a>
+      <a href="#billing">Billing</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section id="dashboard">
+      <h2>Dashboard</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Total Patients</h3>
+          <p id="totalPatients">120</p>
+        </div>
+        <div class="card">
+          <h3>Available Doctors</h3>
+          <p id="totalDoctors">25</p>
+        </div>
+        <div class="card">
+          <h3>Appointments Today</h3>
+          <p id="appointmentsToday">40</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="patients">
+      <h2>Patients</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th><th>Name</th><th>Age</th><th>Condition</th>
+          </tr>
+        </thead>
+        <tbody id="patientList">
+          <!-- Data will be inserted by JS -->
+        </tbody>
+      </table>
+    </section>
+
+    <section id="appointments">
+      <h2>Book Appointment</h2>
+      <form id="appointmentForm">
+        <input type="text" id="patientName" placeholder="Patient Name" required>
+        <input type="text" id="doctorName" placeholder="Doctor Name" required>
+        <input type="date" id="date" required>
+        <button type="submit">Book</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 City Hospital. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
